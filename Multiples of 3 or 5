@@ -1,0 +1,25 @@
+package com.testing.hello;
+
+import java.util.*;
+import java.util.List;
+
+public class Hello {
+
+
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        List<Integer> list = new ArrayList();
+        Integer addition = 0;
+
+        for(int i=0;i<1000;i++){
+            if(i%5==0||i%3==0){
+                list.add(i);
+            }
+        }
+        for (Integer X:
+             list) {
+            addition+=X;
+        }
+        System.out.println(addition);
+    }
+}
